@@ -12,6 +12,16 @@
     <script src="nameSpaces/validaciones/textos.js""></script> -->
     <!-- <script src="nameSpaces/nameSpaces.js""></script> -->
     <!-- <script src="nameSpaces/build/main.js""></script> -->
-    <script src="modulos/modulos.js""></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <!-- <script src="modulos.js""></script> -->
+    <script>
+        SystemJS.config({
+          baseURL: "/",
+          defaultJSExtensions: true  
+        })
+        System.import('modulos.js');
+    </script>
+    
+
 </body>
-</html>      
+</html>                 
